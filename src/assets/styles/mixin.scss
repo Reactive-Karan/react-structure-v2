@@ -1,0 +1,19 @@
+@mixin font($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin fontSizeWeight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin flexVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}

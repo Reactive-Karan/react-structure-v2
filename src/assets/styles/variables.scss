@@ -1,0 +1,42 @@
+:root {
+  /* App level primary color */
+  --primary-color: #1a64af;
+  /* App level primary color */
+
+  --pure-white-color: #ffffff;
+  --black-color : #03080D;
+  --silver-color: #efefef;
+  --grey-color: #797979;
+  --emarald-green-color: #58b647;
+  --aqua-color : rgb(233, 249, 255);
+  --light-grey-color : #F6F6F6;
+
+  --primary-container-max-width: 1440px;
+  --default-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    0 2px 7px 0 rgba(0, 0, 0, 0.1);
+
+  /* Font style variables */
+  --font-style-normal: normal;
+
+  /* Font size, font family and font weight variables */
+  --default-font-family: Poppins, sans-serif;
+  --font-family-lato: Lato;
+
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-40: 40px;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
