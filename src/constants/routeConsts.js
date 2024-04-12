@@ -1,6 +1,7 @@
 export const routes = {
-  DEFAULT_BASE_REDIRECT: "/*",
-  ROOT: "/web-app",
+  DEFAULT_BASE_REDIRECT: "*",
+  ROOT: "/",
+  ROOT_ALL: "/*",
   DEFAULT_THROW: "/login",
   DEFAULT_WEB_REDIRECT: "web-app/*",
   SIGN_IN: "/login",
@@ -13,6 +14,7 @@ export const routes = {
   OTP_VERIFICATION_PHONE: "/otp-verification-phone",
   SET_NEW_PASSWORD: "/set-new-password",
   RESET_PASSWORD: "/reset-password",
+  DASHBOARD: "dashboard",
 };
 
 export const baseRouteMaker = (route) => {

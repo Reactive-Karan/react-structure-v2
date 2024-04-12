@@ -1,12 +1,8 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { languageData } from "../constants/languageData";
 
 export const LanguageContext = createContext();
-
-export const languageData = {
-  en: { value: "en", label: "ENG", dir: "ltr" },
-  fr: { value: "fr", label: "français", dir: "ltr" },
-};
 
 const LanguageProvider = ({ children }) => {
   const [selectedLanguage, setSelectedLanguage] = useState({
@@ -18,7 +14,7 @@ const LanguageProvider = ({ children }) => {
   const { i18n } = useTranslation();
 
   const updateLanguage = (newLang) => {
-    if (["en", "ar"].includes(newLang)) {
+    if (["en", "fr"].includes(newLang)) {
       const updatedLanguageData = Object.keys(languageData).map((item) => ({
         ...languageData[item],
         active: item === newLang,

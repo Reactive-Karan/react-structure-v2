@@ -4,7 +4,7 @@ const generateAntdTheme = () => {
   return {
     token: {
       colorPrimary: "#1A64AF",
-      fontFamily: "Poppins",
+      // fontFamily: "Poppins",
       colorLink: "#1A64AF",
     },
     components: {
@@ -17,6 +17,11 @@ const generateAntdTheme = () => {
         titleMarginBottom: "0",
         fontWeightStrong: 600,
         colorTextDisabled: "rgb(159, 199, 255)",
+      },
+      Layout: {
+        siderBg: "rgb(0, 74, 84)",
+        zeroTriggerWidth: 50,
+        zeroTriggerHeight: 60,
       },
       Input: {
         fontSize: 12,
@@ -44,14 +49,15 @@ const generateAntdTheme = () => {
         colorPrimaryHover: "#134e8a",
       },
       Menu: {
-        itemSelectedBg: "#134e8a",
-        itemSelectedColor: "rgb(255, 255, 255)",
-        itemBorderRadius: 23,
         itemMarginBlock: 20,
-        itemHeight: 42,
-        itemHoverBg: "#134e8a",
-        itemHoverColor: "rgb(255, 255, 255)",
+        itemSelectedColor: "rgb(243, 248, 251)",
+        itemHoverBg: "rgb(243, 248, 251)",
+        itemHoverColor: "rgb(0, 74, 84)",
+        itemColor: "rgb(204, 219, 221)",
+        itemActiveBg: "rgb(2, 65, 74)",
+        itemBg: "rgb(0, 74, 84)",
         itemMarginInline: 15,
+        itemSelectedBg: "rgb(2, 65, 74)",
       },
       Table: {
         borderColor: "rgb(255, 255, 255)",

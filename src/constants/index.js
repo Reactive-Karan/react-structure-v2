@@ -1,5 +1,5 @@
 import { routes } from "./routeConsts";
-import { userRoles } from "./userRolesConts";
 import { BASE_URL } from "./baseUrl";
+import { roles } from "./roles";
 
-export { routes, userRoles, BASE_URL };
+export { routes, BASE_URL, roles };

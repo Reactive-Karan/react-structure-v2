@@ -70,3 +70,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+  height: 200px !important;
+  width: 200px !important;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1.0);
+  }
+}

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@reduxjs/toolkit": "^2.2.3",
     "antd": "^5.16.0",
     "axios": "^1.6.8",
     "i18next": "^23.10.1",
@@ -16,11 +16,12 @@
     "react-helmet-async": "^2.0.4",
     "react-i18next": "^14.1.0",
     "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0",
-    "react-router-dom": "^6.22.3"
+    "web-vitals": "^2.1.0"
   },
   "devDependencies": {
+    "eslint-plugin-react-refresh": "^0.4.6",
     "sass": "^1.74.1",
     "workbox-window": "^7.0.0"
   },

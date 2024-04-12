@@ -3,10 +3,10 @@ ARG appUrl
 ARG wsUrl
 WORKDIR /app
 COPY . /app
-RUN npm install
+RUN yarn
 ENV REACT_APP_URL=$appUrl
 ENV WS_URL=$wsUrl
-RUN npm run build
+RUN yarn run build
 
 FROM nginx:1.25.1
 COPY --from=build /app/dist /usr/share/nginx/html/
