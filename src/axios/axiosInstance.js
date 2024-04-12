@@ -1,5 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../constants";
+import { getDecryptedToken } from "../utils/getDecryptedToken";
 // import { Navigate } from "react-router-dom";
 // Add a request interceptor
 
@@ -12,7 +13,8 @@ const axiosInstance = axios.create({
 
 /* Add a request interceptor */
 const requestInterceptor = (config) => {
-  let token = localStorage.getItem("token");
+  let token = getDecryptedToken("token");
+
   if (token) {
     config.headers["Authorization"] = token;
   }

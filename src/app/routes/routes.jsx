@@ -1,19 +1,10 @@
 import RequireAuth from "../requireAuth";
 import { roles, routes } from "../../constants";
 import * as lazy from "./lazyComponents";
-import React from "react";
-// import AuthLayout from "../../components/layouts/Auth.layout";
+import AuthLayout from "../../components/layouts/Auth.layout";
 // import AuthSecondaryLayout from "../../components/layouts/Auth.Secondary.layout";
 // import MainLayout from "../../components/layouts/Main.layout";
 import PrimaryLayout from "../../components/layouts/Primary.layout";
-
-const Calendar = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 5 * 1000)).then(() =>
-    Math.floor(10) >= 4
-      ? import("../../components/pages/auth/login")
-      : Promise.reject(new Error())
-  );
-});
 
 export const routesData = [
   {
@@ -22,8 +13,12 @@ export const routesData = [
     role: [roles.author, roles.superAdmin, roles.patient, roles.other],
   },
   {
-    path: "xyz",
-    element: <Calendar />,
+    path: routes.SIGN_UP,
+    element: (
+      <AuthLayout>
+        <h1>Damn</h1>
+      </AuthLayout>
+    ),
     role: [roles.author, roles.superAdmin, roles.patient, roles.other],
   },
   {
